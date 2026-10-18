@@ -16,20 +16,31 @@ function HeroSection() {
   useEffect(() => {
     const interval = setInterval(() => {
       setCurrentImage((prev) => (prev + 1) % images.length);
-    }, 4000);
+    }, 5500);
 
     return () => clearInterval(interval);
   }, [images.length]);
 
   return (
     <section className="relative min-h-[500px] md:min-h-[600px] overflow-hidden">
-      {/* Current Image */}
-      <div
-        className="absolute inset-0 bg-cover bg-center"
-        style={{
-          backgroundImage: `url(${images[currentImage]})`,
-        }}
-      ></div>
+      {/* Image Slider */}
+      <div className="absolute inset-0 overflow-hidden">
+        <div
+          className="flex h-full transition-transform duration-[1500ms] ease-in-out"
+          style={{
+            transform: `translateX(-${currentImage * 100}%)`,
+          }}
+        >
+          {images.map((image, index) => (
+            <img
+              key={index}
+              src={image}
+              alt={`Sonalite construction ${index + 1}`}
+              className="w-full h-full min-w-full object-cover"
+            />
+          ))}
+        </div>
+      </div>
 
       {/* Dark Overlay */}
       <div className="absolute inset-0 bg-black/40"></div>
@@ -37,23 +48,19 @@ function HeroSection() {
       {/* Hero Content */}
       <div className="relative z-10 flex items-center min-h-[500px] md:min-h-[600px] px-6 md:px-16">
         <div className="w-full max-w-4xl space-y-1 pb-10">
-          {/* Brand Tagline */}
           <p className="text-[#FC8019] text-xl font-bold mb-4">
             SONALITE CONSTRUCTION CHEMICALS
           </p>
 
-          {/* Main Heading */}
           <h1 className="text-4xl md:text-6xl font-bold text-white">
             Strong Solutions for Stronger Construction
           </h1>
 
-          {/* Description */}
           <p className="text-white/90 text-lg md:text-xl max-w-2xl mt-5">
             High-quality construction chemical solutions designed for stronger,
             durable and reliable construction.
           </p>
 
-          {/* CTA Buttons */}
           <div>
             <a
               href="#products"
