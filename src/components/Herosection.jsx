@@ -16,16 +16,16 @@ function HeroSection() {
   useEffect(() => {
     const interval = setInterval(() => {
       setCurrentImage((prev) => (prev + 1) % images.length);
-    }, 5000);
+    }, 4000);
 
     return () => clearInterval(interval);
-  }, []);
+  }, [images.length]);
 
   return (
     <section className="relative min-h-[500px] md:min-h-[600px] overflow-hidden">
-      {/* Background Image */}
+      {/* Current Image */}
       <div
-        className="absolute inset-0 bg-cover bg-center transition-all duration-1000"
+        className="absolute inset-0 bg-cover bg-center"
         style={{
           backgroundImage: `url(${images[currentImage]})`,
         }}
