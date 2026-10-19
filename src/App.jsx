@@ -7,11 +7,14 @@ import ProductList from "./components/ProductList";
 import ProductDetails from "./components/ProductDetails";
 import Footer from "./components/Footer";
 
+import CompanyIntro from "./components/CompanyIntro";
+
 function Home() {
   return (
     <>
       <Navbar />
       <Herosection />
+      <CompanyIntro />
       <ProductSection />
       <Footer />
     </>
