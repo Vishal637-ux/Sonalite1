@@ -46,7 +46,7 @@ function HeroSection() {
       <div className="absolute inset-0 bg-black/40"></div>
 
       {/* Hero Content */}
-      <div className="relative z-10 flex items-center min-h-[500px] md:min-h-[600px] px-6 md:px-16">
+      <div className="relative z-10 flex items-center justify-center min-h-[500px] md:min-h-[600px] px-6 md:px-16">
         <div className="w-full max-w-4xl space-y-1 pb-10">
           <p className="text-[#FC8019] text-xl font-bold mb-4">
             SONALITE CONSTRUCTION CHEMICALS
