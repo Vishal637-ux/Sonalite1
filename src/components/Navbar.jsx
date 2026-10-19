@@ -5,7 +5,6 @@ function Navbar() {
     <nav className="fixed top-0 left-0 w-full z-50 bg-white/95 backdrop-blur-md shadow-sm">
       <div className="max-w-7xl mx-auto px-6">
         <div className="h-20 flex items-center justify-between">
-
           {/* Logo */}
           <Link to="/" className="flex items-center">
             <img
@@ -17,7 +16,6 @@ function Navbar() {
 
           {/* Navigation */}
           <div className="flex items-center gap-10">
-
             <Link
               to="/"
               className="font-semibold text-[#0B2A4A] hover:text-[#FC8019] transition-colors duration-200"
@@ -33,7 +31,7 @@ function Navbar() {
             </Link>
 
             <Link
-              to="/#about"
+              to="/about"
               className="font-semibold text-[#0B2A4A] hover:text-[#FC8019] transition-colors duration-200"
             >
               About Us
@@ -45,7 +43,6 @@ function Navbar() {
             >
               Contact Us
             </Link>
-
           </div>
         </div>
       </div>

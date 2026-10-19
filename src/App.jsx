@@ -2,12 +2,12 @@ import { BrowserRouter, Routes, Route } from "react-router-dom";
 
 import Navbar from "./components/Navbar";
 import Herosection from "./components/Herosection";
+import CompanyIntro from "./components/CompanyIntro";
 import ProductSection from "./components/ProductSection";
 import ProductList from "./components/ProductList";
 import ProductDetails from "./components/ProductDetails";
+import About from "./components/About";
 import Footer from "./components/Footer";
-
-import CompanyIntro from "./components/CompanyIntro";
 
 function Home() {
   return (
@@ -25,10 +25,10 @@ function App() {
   return (
     <BrowserRouter>
       <Routes>
-        {/* Home Page */}
+        {/* Home */}
         <Route path="/" element={<Home />} />
 
-        {/* Products Category Page */}
+        {/* Products */}
         <Route
           path="/products"
           element={
@@ -40,7 +40,7 @@ function App() {
           }
         />
 
-        {/* Product List Page */}
+        {/* Products by Category */}
         <Route
           path="/products/:category"
           element={
@@ -52,7 +52,19 @@ function App() {
           }
         />
 
-        {/* Product Details Page */}
+        {/* About Us */}
+        <Route
+          path="/about"
+          element={
+            <>
+              <Navbar />
+              <About />
+              <Footer />
+            </>
+          }
+        />
+
+        {/* Product Details */}
         <Route
           path="/product/:id"
           element={
