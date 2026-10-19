@@ -3,7 +3,7 @@ const products = [
   {
     id: 1,
     category: "Tile Adhesives",
-    name: "Sonalite Tile Adhesive Type 1",
+    name: "Sonabond",
     image: "/tile-adhesive.jpg",
     shortDescription:
       "Tile fixing solution for suitable wall and floor applications.",
@@ -29,7 +29,7 @@ const products = [
   {
     id: 2,
     category: "Tile Adhesives",
-    name: "Sonalite Tile Adhesive Type 2",
+    name: "SonaBondPlus",
     image: "/tile-adhesive.jpg",
     shortDescription:
       "Reliable tile fixing solution for selected construction applications.",
@@ -55,7 +55,7 @@ const products = [
   {
     id: 3,
     category: "Tile Adhesives",
-    name: "Sonalite Tile Adhesive Type 3",
+    name: "SonaBondPrime",
     image: "/tile-adhesive.jpg",
     shortDescription:
       "Construction adhesive solution designed for tile installation.",
