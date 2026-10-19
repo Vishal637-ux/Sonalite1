@@ -38,7 +38,7 @@ function Navbar() {
             </Link>
 
             <Link
-              to="/#contact"
+              to="/contact"
               className="bg-[#FC8019] text-white px-5 py-2.5 rounded-lg font-semibold hover:bg-[#e66f0f] transition-all duration-200 shadow-sm"
             >
               Contact Us

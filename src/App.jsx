@@ -7,6 +7,7 @@ import ProductSection from "./components/ProductSection";
 import ProductList from "./components/ProductList";
 import ProductDetails from "./components/ProductDetails";
 import About from "./components/About";
+import Contact from "./components/Contact";
 import Footer from "./components/Footer";
 
 function Home() {
@@ -59,6 +60,18 @@ function App() {
             <>
               <Navbar />
               <About />
+              <Footer />
+            </>
+          }
+        />
+
+        {/* Contact Us */}
+        <Route
+          path="/contact"
+          element={
+            <>
+              <Navbar />
+              <Contact />
               <Footer />
             </>
           }
